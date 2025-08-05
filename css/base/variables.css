@@ -1,0 +1,12 @@
+:root {
+  --color-body-bg: #FFFFFF;
+  --color-btn-yellow: #FED30A;
+  --color-btn-dark: #222222;
+  --color-bg-card: #F0F0F0;
+  --color-text: #5C6573;
+
+  /* Шрифты */
+
+  --Unbounded: Unbounded;
+  --Actay: Actay;
+}

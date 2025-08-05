@@ -1,0 +1,59 @@
+/* База */
+@import url(../css/base/reset.css);
+@import url(../css/base/variables.css);
+
+/* компоненты */
+@import url(../css/components/button.css);
+@import url(../css/components/card-blog.css);
+@import url(../css/components/card-services.css);
+@import url(../css/components/swiper-bundle.css);
+
+
+/* секции */
+@import url(../css/sections/hero.css);
+@import url(../css/sections/services.css);
+@import url(../css/sections/choose.css~);
+
+
+
+
+
+
+/* Шрифты */
+
+@font-face {
+  font-family: Actay;
+  src: url(../fonts/Actay-Regular.woff2), sans-serif;
+}
+
+@font-face {
+  font-family: Unbounded;
+  src: url(../fonts/Unbounded-Regular.woff2), sans-serif;
+}
+
+body {
+  background-color: var(--color-body-bg);
+  user-select: none;
+  /* Стандартное свойство */
+  -webkit-user-select: none;
+  /* Chrome, Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
