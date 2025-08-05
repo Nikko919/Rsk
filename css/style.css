@@ -7,14 +7,21 @@
 @import url(../css/components/card-blog.css);
 @import url(../css/components/card-services.css);
 @import url(../css/components/swiper-bundle.css);
+@import url(../css/components/burger.css);
+@import url(../css/components/cookie.css);
+@import url(../css/components/popup.css);
 
 
 /* секции */
 @import url(../css/sections/hero.css);
 @import url(../css/sections/services.css);
 @import url(../css/sections/choose.css);
+@import url(../css/sections/blog.css);
+@import url(../css/sections/main-form.css);
 
 
+
+@import url(../css/footer/footer.css);
 
 
 

@@ -63,3 +63,29 @@ function toggleSwiperOrGrid() {
 // Инициализация при загрузке и изменении окна
 window.addEventListener('load', toggleSwiperOrGrid);
 window.addEventListener('resize', toggleSwiperOrGrid);
+
+
+
+
+// блог
+
+
+var swiper = new Swiper(".blogSwiper", {
+  slidesPerView: 1.20,
+  spaceBetween: 10,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+
+    }
+  },
+  navigation: {
+    nextEl: ".blog-button-prev",
+    prevEl: " .blog-button-next",
+  },
+});

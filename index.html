@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="css\style.css">
   <script defer src="js/swiper-bundle.js"></script>
   <script defer src="js/initialization.js"></script>
+  <script defer src="js/popup/formClouse.js"></script>
+  <script defer src="js/popup/popupValidation.js"></script>
+  <script defer src="js/burger/burger.js"></script>
+  <script defer src="js/cookie.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+
   <title>Document</title>
 </head>
 
@@ -162,46 +168,525 @@
         <div class="container">
           <div class="choose__content">
             <div class="choose__title">Почему выбирают нас</div>
-            <div class="choose__cards-box">
+            <div class="choose__cards-inner">
 
-              <div class="choose__card">
-                <h3 class="choose__card-title">Гарантия</h3>
-                <p class="choose__card-text text">1 год на все виды работ и 3 года
-                  на инженерные коммуникации</p>
-              </div>
-              <div class="choose__card choose__card-bg">
-                <img src="./images/choose/ChatGPT Image 27 июл. 2025 г., 19_22_21 — копия.png" alt="" class="choose__card-img">
-              </div>
-              <div class="choose__card">
-                <h3 class="choose__card-title">Предоставление чеков</h3>
-                <p class="choose__card-text text">Предоставляются чеки как на работы , так и на строительные материалы для обеспечения полной прозрачности</p>
-              </div>
-              <div class="choose__card choose__card-bg-yellow">
-                <h3 class="choose__card-title">Бесплатно</h3>
-                <p class="choose__card-text choose__card-text-color text">Выезжает замерщик на сектор</p>
-              </div>
-              <div class="choose__card ">
-                <h3 class="choose__card-title">Работа без предоплаты </h3>
-                <p class="choose__card-text text">Оплата только по факту выполненных работ</p>
-              </div>
-              <div class="choose__card">
-                <h3 class="choose__card-title">Один договор</h3>
-                <p class="choose__card-text text">Он включает весь перечень работ и материалов, для удобства и юридической защиты клиента</p>
-              </div>
-              <div class="choose__card">
-                <img src="./images/choose/1_ — копия.png" alt="" class="choose__card-img">
+              <div class="choose__cards-box">
 
+                <div class="choose__card">
+                  <h3 class="choose__card-title">Гарантия</h3>
+                  <p class="choose__card-text text">1 год на все виды работ и 3 года
+                    на инженерные коммуникации</p>
+                </div>
+                <div class="choose__card choose__card-bg">
+                  <img src="./images/choose/ChatGPT Image 27 июл. 2025 г., 19_22_21 — копия.png" alt="" class="choose__card-img">
+                </div>
+                <div class="choose__card">
+                  <h3 class="choose__card-title">Предоставление чеков</h3>
+                  <p class="choose__card-text text">Предоставляются чеки как на работы , так и на строительные материалы для обеспечения полной прозрачности</p>
+                </div>
+                <div class="choose__card choose__card-bg-yellow">
+                  <h3 class="choose__card-title">Бесплатно</h3>
+                  <p class="choose__card-text choose__card-text-color text">Выезжает замерщик на сектор</p>
+                </div>
+                <div class="choose__card ">
+                  <h3 class="choose__card-title">Работа без предоплаты </h3>
+                  <p class="choose__card-text text">Оплата только по факту выполненных работ</p>
+                </div>
+                <div class="choose__card">
+                  <h3 class="choose__card-title">Один договор</h3>
+                  <p class="choose__card-text text">Он включает весь перечень работ и материалов, для удобства и юридической защиты клиента</p>
+                </div>
+                <div class="choose__card">
+                  <img src="./images/choose/1_ — копия.png" alt="" class="choose__card-img">
+
+                </div>
+                <div class="choose__card choose__card-bg-yellow ">
+                  <h3 class="choose__card-title">24/7</h3>
+                  <p class="choose__card-text choose__card-text-color text">Круглосуточная служба поддержки</p>
+                </div>
               </div>
-              <div class="choose__card choose__card-bg-yellow ">
-                <h3 class="choose__card-title">24/7</h3>
-                <p class="choose__card-text choose__card-text-color text">Круглосуточная служба поддержки</p>
+              <button class="btn choose-btn">
+                <span>Оставить заявку</span>
+                <div class="btn-svg-box">
+                  <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__content">
+            <h2 class="blog__title">Блог</h2>
+            <div class="blog__swiper-box">
+              <div class="blog__swiper-pagination">
+                <div class="blog-button-next">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.29255 17.3389L19.2926 27.3389C19.3855 27.4318 19.4958 27.5055 19.6172 27.5558C19.7386 27.6061 19.8687 27.632 20.0001 27.632C20.1314 27.632 20.2616 27.6061 20.383 27.5558C20.5043 27.5055 20.6146 27.4318 20.7076 27.3389C20.8005 27.246 20.8742 27.1357 20.9244 27.0143C20.9747 26.8929 21.0006 26.7628 21.0006 26.6314C21.0006 26.5 20.9747 26.3699 20.9244 26.2485C20.8742 26.1271 20.8005 26.0168 20.7076 25.9239L11.4138 16.6314L20.7076 7.33892C20.8952 7.15127 21.0006 6.89678 21.0006 6.63142C21.0006 6.36605 20.8952 6.11156 20.7076 5.92392C20.5199 5.73627 20.2654 5.63086 20.0001 5.63086C19.7347 5.63086 19.4802 5.73627 19.2926 5.92392L9.29255 15.9239C9.19958 16.0168 9.12582 16.1271 9.07549 16.2485C9.02517 16.3699 8.99927 16.5 8.99927 16.6314C8.99927 16.7628 9.02517 16.893 9.07549 17.0144C9.12582 17.1358 9.19958 17.246 9.29255 17.3389Z" />
+                  </svg>
+                </div>
+                <div class="blog-button-prev">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7074 17.3389L12.7074 27.3389C12.6145 27.4318 12.5042 27.5055 12.3828 27.5558C12.2614 27.6061 12.1313 27.632 11.9999 27.632C11.8686 27.632 11.7384 27.6061 11.617 27.5558C11.4957 27.5055 11.3854 27.4318 11.2924 27.3389C11.1995 27.246 11.1258 27.1357 11.0756 27.0143C11.0253 26.8929 10.9994 26.7628 10.9994 26.6314C10.9994 26.5 11.0253 26.3699 11.0756 26.2485C11.1258 26.1271 11.1995 26.0168 11.2924 25.9239L20.5862 16.6314L11.2924 7.33892C11.1048 7.15127 10.9994 6.89678 10.9994 6.63142C10.9994 6.36605 11.1048 6.11156 11.2924 5.92392C11.4801 5.73627 11.7346 5.63086 11.9999 5.63086C12.2653 5.63086 12.5198 5.73627 12.7074 5.92392L22.7074 15.9239C22.8004 16.0168 22.8742 16.1271 22.9245 16.2485C22.9748 16.3699 23.0007 16.5 23.0007 16.6314C23.0007 16.7628 22.9748 16.893 22.9245 17.0144C22.8742 17.1358 22.8004 17.246 22.7074 17.3389Z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper blogSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide blog-slide">
+                    <div class="blog-card">
+                      <div class="blog-card-top">
+                        <div class="blog-card-top__img-box">
+                          <img src="./images\choose\1_ — копия.png" alt="" class="blog-card-top__img">
+                        </div>
+                      </div>
+                      <div class="blog-card-mid">
+                        <div class="text-content-top">
+                          <h2 class="blog-card__title">Укладка плитки</h2>
+                          <div class="blog-card-date">12.12.2025</div>
+                        </div>
+                        <div class="blog-card__teg-box ">
+                          <span class="blog-card-teg">#ремонт</span>
+                          <span class="blog-card-teg">#кватрира</span>
+                          <span class="blog-card-teg">#тег</span>
+                        </div>
+                        <div class="card__discription">
+                          <p class="text">Выполняем все этапы: демонтаж, черновые и чистовые работы, выравнивание стен и пола, электрика, сантехника...</p>
+                        </div>
+                      </div>
+                      <div class="blog-card-bottom">
+                        <a href="##" class="btn">
+                          <span>Читать статью</span>
+                          <div class="btn-svg-box">
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide blog-slide">
+                    <div class="blog-card">
+                      <div class="blog-card-top">
+                        <div class="blog-card-top__img-box">
+                          <img src="./images\choose\3 (3).png" alt="" class="blog-card-top__img">
+                        </div>
+                      </div>
+                      <div class="blog-card-mid">
+                        <div class="text-content-top">
+                          <h2 class="blog-card__title">Укладка плитки</h2>
+                          <div class="blog-card-date">12.12.2025</div>
+                        </div>
+                        <div class="blog-card__teg-box ">
+                          <span class="blog-card-teg">#ремонт</span>
+                          <span class="blog-card-teg">#кватрира</span>
+                          <span class="blog-card-teg">#тег</span>
+                        </div>
+                        <div class="card__discription">
+                          <p class="text">Выполняем все этапы: демонтаж, черновые и чистовые работы, выравнивание стен и пола, электрика, сантехника...</p>
+                        </div>
+                      </div>
+                      <div class="blog-card-bottom">
+                        <a href="##" class="btn">
+                          <span>Читать статью</span>
+                          <div class="btn-svg-box">
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide blog-slide">
+                    <div class="blog-card">
+                      <div class="blog-card-top">
+                        <div class="blog-card-top__img-box">
+                          <img src="./images\choose\ChatGPT Image 27 июл. 2025 г., 19_12_37.png" alt="" class="blog-card-top__img">
+                        </div>
+                      </div>
+                      <div class="blog-card-mid">
+                        <div class="text-content-top">
+                          <h2 class="blog-card__title">Укладка плитки</h2>
+                          <div class="blog-card-date">12.12.2025</div>
+                        </div>
+                        <div class="blog-card__teg-box ">
+                          <span class="blog-card-teg">#ремонт</span>
+                          <span class="blog-card-teg">#кватрира</span>
+                          <span class="blog-card-teg">#тег</span>
+                        </div>
+                        <div class="card__discription">
+                          <p class="text">Выполняем все этапы: демонтаж, черновые и чистовые работы, выравнивание стен и пола, электрика, сантехника...</p>
+                        </div>
+                      </div>
+                      <div class="blog-card-bottom">
+                        <a href="##" class="btn">
+                          <span>Читать статью</span>
+                          <div class="btn-svg-box">
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide blog-slide">
+                    <div class="blog-card">
+                      <div class="blog-card-top">
+                        <div class="blog-card-top__img-box">
+                          <img src="./images\choose\ChatGPT Image 27 июл. 2025 г., 19_22_21 — копия.png" alt="" class="blog-card-top__img">
+                        </div>
+                      </div>
+                      <div class="blog-card-mid">
+                        <div class="text-content-top">
+                          <h2 class="blog-card__title">Укладка плитки</h2>
+                          <div class="blog-card-date">12.12.2025</div>
+                        </div>
+                        <div class="blog-card__teg-box ">
+                          <span class="blog-card-teg">#ремонт</span>
+                          <span class="blog-card-teg">#кватрира</span>
+                          <span class="blog-card-teg">#тег</span>
+                        </div>
+                        <div class="card__discription">
+                          <p class="text">Выполняем все этапы: демонтаж, черновые и чистовые работы, выравнивание стен и пола, электрика, сантехника...</p>
+                        </div>
+                      </div>
+                      <div class="blog-card-bottom">
+                        <a href="##" class="btn">
+                          <span>Читать статью</span>
+                          <div class="btn-svg-box">
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide blog-slide">
+                    <div class="blog-card">
+                      <div class="blog-card-top">
+                        <div class="blog-card-top__img-box">
+                          <img src="./images\choose\ChatGPT Image 27 июл. 2025 г., 19_30_13.png" alt="" class="blog-card-top__img">
+                        </div>
+                      </div>
+                      <div class="blog-card-mid">
+                        <div class="text-content-top">
+                          <h2 class="blog-card__title">Больше новостей смотри на странице “БЛОГ”</h2>
+                        </div>
+                        <div class="card__discription">
+                          <p class="text">Переходи на страницу и читай больше новостей и советов по строительсту. Мы открыто делимся своей работой и помогаем людям!</p>
+                        </div>
+                      </div>
+                      <div class="blog-card-bottom">
+                        <a href="##" class="btn btn-color">
+                          <span>Читать статью</span>
+                          <div class="btn-svg-box">
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- <section class="main-form">
+        <div class="container">
+          <div class="main-form__content">
+            <div class="main-form__content-left">
+              <h2 class="main-form__title">
+                Закажи звонок
+              </h2>
+              <div class="main-form__description">
+                <p class="main-form__text">Мы ценим каждого клиента и готовы предложить индивидуальные решения, учитывающие все ваши требования и пожелания.</p>
+              </div>
+              <form class="main__form" action="">
+                <input class="main-form__input" type="text" name="name" id="" placeholder="Имя">
+                <input class="main-form__input" type="number" name="phone" id="" placeholder="+9 (999) 999-99-99">
+                <textarea class="textarea" name="coment" id="" placeholder="Комментарий:"></textarea>
+              </form>
+            </div>
+            <div class="main-form__content-right">
+              <img src="./images\фотографии для сайта\дом.png" alt="" class="main-form__content-img">
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="main-form">
+        <div class="container">
+          <div class="main-form-content-inner">
+            <div class="main-form-content-box">
+              <h2 class="main-form-title">Закажи звонок</h2>
+              <p class="main-form-subtitle">Мы ценим каждого клиента и готовы предложить индивидуальные решения, учитывающие все ваши требования и пожелания.</p>
+              <form class="popup__form form-main" action="">
+                <div class=" form-input-box">
+                  <input class="form-main-input" type="text" name="name" id="" placeholder="Имя">
+                  <input class="form-main-input" type="text" name="phone" id="" placeholder="+7 (999)-999-99-99">
+                  <textarea class="textare-input" resize: none; name="comment" placeholder="Комментарий:"></textarea>
+                </div>
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a class="custom-checkbox-policy" href="##">персональных даннных</a></p>
+                </div>
+                <button class="btn btn-color">
+                  <span>Оставить заявку</span>
+                  <div class="btn-svg-box">
+                    <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.875 19.0063V7.63135C21.875 7.39929 21.7828 7.17672 21.6187 7.01263C21.4546 6.84854 21.2321 6.75635 21 6.75635H9.625C9.39293 6.75635 9.17037 6.84854 9.00628 7.01263C8.84219 7.17672 8.75 7.39929 8.75 7.63135C8.75 7.86341 8.84219 8.08597 9.00628 8.25007C9.17037 8.41416 9.39293 8.50635 9.625 8.50635H18.888L6.38094 21.0123C6.21675 21.1765 6.12451 21.3992 6.12451 21.6313C6.12451 21.8635 6.21675 22.0862 6.38094 22.2504C6.54512 22.4146 6.7678 22.5068 7 22.5068C7.23219 22.5068 7.45488 22.4146 7.61906 22.2504L20.125 9.74338V19.0063C20.125 19.2384 20.2172 19.461 20.3813 19.6251C20.5454 19.7892 20.7679 19.8813 21 19.8813C21.2321 19.8813 21.4546 19.7892 21.6187 19.6251C21.7828 19.461 21.875 19.2384 21.875 19.0063Z" />
+                    </svg>
+                  </div>
+                </button>
+              </form>
+            </div>
+            <div class="main-form-content-bg-box">
+              <img src="images\фотографии для сайта\дом.png" alt="" class="main-form-content-bg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-top footer-top">
+            <div class="footer-top__columns">
+              <div class="footer-top__column">
+                <div class="footer-top__column-social-box">
+                  <a class="social-link" href="https://t.me/##">
+                    <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="13.4414" r="9.9375" stroke-width="2" />
+                      <path d="M17.9583 8.91702C18.0557 8.28775 17.4573 7.79106 16.8978 8.03672L5.75376 12.9296C5.35252 13.1057 5.38187 13.7135 5.79802 13.846L8.09621 14.5779C8.53483 14.7176 9.00979 14.6453 9.3928 14.3807L14.5742 10.801C14.7304 10.693 14.9008 10.9152 14.7673 11.0528L11.0376 14.8982C10.6758 15.2712 10.7476 15.9032 11.1828 16.1762L15.3586 18.7948C15.8269 19.0885 16.4294 18.7934 16.517 18.2275L17.9583 8.91702Z" />
+                    </svg>
+                  </a>
+
+                  <a class="social-link" href="whatsapp://send?phone=##">
+                    <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24.3789C18.5406 24.3789 23.4375 19.482 23.4375 13.4414C23.4375 7.40079 18.5406 2.50391 12.5 2.50391C6.45939 2.50391 1.5625 7.40079 1.5625 13.4414C1.5625 15.403 2.0789 17.244 2.98318 18.8359L1.5625 24.3789L7.27724 23.0537C8.8292 23.8988 10.6085 24.3789 12.5 24.3789ZM12.5 22.6962C17.6113 22.6962 21.7548 18.5527 21.7548 13.4414C21.7548 8.33012 17.6113 4.1866 12.5 4.1866C7.38871 4.1866 3.24519 8.33012 3.24519 13.4414C3.24519 15.4149 3.86289 17.2441 4.9155 18.7463L4.08654 21.8549L7.24995 21.064C8.74169 22.0934 10.5504 22.6962 12.5 22.6962Z" />
+                      <path d="M9.76564 8.36336C9.50559 7.84103 9.10666 7.88728 8.70365 7.88728C7.98341 7.88728 6.86035 8.75 6.86035 10.3556C6.86035 11.6715 7.44019 13.1119 9.39408 15.2667C11.2797 17.3462 13.7573 18.4219 15.8142 18.3853C17.8711 18.3487 18.2943 16.5786 18.2943 15.9809C18.2943 15.7159 18.1299 15.5838 18.0166 15.5478C17.3157 15.2114 16.0229 14.5847 15.7288 14.4669C15.4346 14.3491 15.281 14.5084 15.1856 14.5951C14.9188 14.8493 14.39 15.5984 14.209 15.7669C14.0279 15.9354 13.758 15.8502 13.6457 15.7865C13.2324 15.6206 12.1117 15.1221 11.2183 14.2561C10.1135 13.1852 10.0487 12.8167 9.84055 12.4887C9.67403 12.2263 9.79622 12.0653 9.8572 11.995C10.0952 11.7203 10.4239 11.2963 10.5713 11.0855C10.7187 10.8748 10.6017 10.5549 10.5315 10.3556C10.2295 9.49861 9.97368 8.78122 9.76564 8.36336Z" />
+                    </svg>
+                  </a>
+
+                  <a class="social-link" href="##">
+                    <svg class="no-fill" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.128 18.1289C8.32341 18.1289 5.58294 14.903 5.46875 9.53516H7.87545C7.9545 13.475 9.72878 15.1439 11.1342 15.488V9.53516H13.4003V12.9331C14.7881 12.7868 16.2462 11.2384 16.7381 9.53516H19.0042C18.8189 10.4185 18.4494 11.2549 17.9189 11.992C17.3884 12.7292 16.7083 13.3512 15.9212 13.8191C16.7998 14.2467 17.5759 14.8519 18.1982 15.5948C18.8205 16.3377 19.2748 17.2014 19.5312 18.1289H17.0367C16.8065 17.3233 16.3387 16.6022 15.6918 16.0559C15.0449 15.5096 14.2478 15.1624 13.4003 15.0579V18.1289H13.128Z" />
+                      <path d="M12.0439 3.50391H12.9561C15.4586 3.50391 17.2369 3.50607 18.585 3.68652C19.7399 3.84116 20.4625 4.11402 20.9922 4.54688L21.208 4.74219C21.7516 5.29002 22.0803 6.04613 22.2559 7.3623C22.4352 8.70723 22.4375 10.479 22.4375 12.9678V13.8975C22.4375 16.3952 22.4353 18.1713 22.2559 19.5186C22.0803 20.8371 21.7515 21.5929 21.208 22.1406C20.6596 22.6889 19.9061 23.0197 18.5879 23.1963C17.2411 23.3767 15.4633 23.3789 12.9561 23.3789H12.0439C9.54613 23.3789 7.77061 23.3767 6.42383 23.1963C5.10482 23.0196 4.34888 22.6887 3.80078 22.1406C3.25256 21.5924 2.92179 20.8362 2.74512 19.5195C2.56477 18.1751 2.5625 16.4038 2.5625 13.915V12.9854C2.5625 10.4876 2.56473 8.71153 2.74414 7.36426C2.91973 6.04574 3.24854 5.2899 3.79199 4.74219C4.34038 4.19389 5.09387 3.86313 6.41211 3.68652C7.7589 3.50609 9.53672 3.50391 12.0439 3.50391Z" stroke-width="2" />
+                    </svg>
+                  </a>
+                </div>
+                <span class="footer-top__column-description">ООО...</span>
+                <span class="footer-top__column-description">ООО....</span>
+              </div>
+              <div class="footer-top__column-box">
+                <div class="footer-top__column footer-top__column-contact ">
+                  <a href="tel:##" class="footer-top__column-description description-hover ">+7(000)000-00-00</a>
+                  <a href="tel:##" class="footer-top__column-description description-hover ">+7(000)000-00-00</a>
+                  <a href="mailto:##" class="footer-top__column-description description-hover ">info@company.com</a>
+                </div>
+                <div class="footer-top__column">
+                  <span class="footer-top__column-description">
+                    Адрес:
+                    <a class="description-hover" href=""> Где находится предприятие Где находится предприятие</a>
+
+                  </span>
+                  <span class="footer-top__column-description">с 9:00 до 18:00 по будням</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content-bottom footer-bottom">
+            <div class="legal-terms_box">
+              <a href=" ##" class="footer-top__column-policy description-hover">Политика конфиндециальности</a>
+            </div>
+            <span class="footer-bottom-descripter"><svg width="74" height="25" viewBox="0 0 74 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0382 0.636719H0.0839844V24.1387H4.75988V4.9676H12.0382C14.6438 4.9676 16.5819 6.64759 16.5819 8.96297C16.5819 11.2783 14.6115 12.8907 12.0382 12.8907H7.42999V17.2893H12.0382C16.814 17.2893 21.2545 13.697 21.2545 8.96297C21.2545 3.96147 17.0463 0.636719 12.0382 0.636719Z" fill="#222222" />
+                <path d="M36.0761 4.62936C39.4815 4.62936 42.1194 6.17411 43.39 8.75711H48.3303C46.8598 3.48461 42.0871 0.130859 36.0761 0.130859C31.2133 0.130859 27.1694 2.41399 24.9926 6.00961H31.1843C32.5129 5.12286 34.1865 4.62624 36.0761 4.62624V4.62936ZM36.0761 20.1405C31.3358 20.1405 27.9305 16.9512 27.9305 12.4205C27.9305 11.0564 28.2206 9.82449 28.756 8.75711H23.777C23.4351 9.90186 23.2545 11.1274 23.2545 12.4205C23.2545 19.402 28.7656 24.6422 36.0761 24.6422C42.0871 24.6422 46.8953 21.2854 48.3303 16.0129H43.39C42.0871 18.5636 39.4493 20.1405 36.0761 20.1405Z" fill="#222222" />
+                <path d="M50.3303 0.634766V24.1368H55.0062V0.634766H50.3303ZM62.0491 12.3858L73.1326 0.634766H66.7896L57.6731 10.238V14.6334L67.4893 24.1368H74.0001L62.0459 12.3858H62.0491Z" fill="#222222" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-footer-windows">
+      <div id="popupBg1" class="popup__bg">
+        <div id="popup1" class="popup">
+          <div id="closePopupBtn1" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставьте заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с вами</div>
+          </div>
+          <form class="popup__form">
+            <!-- <form class="popup__form" action="send_popup.php" method="POST"> -->
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input name="name" type="text" class="popup__input" placeholder=" Имя">
+                <input name="phone" type="text" class="popup__input" placeholder="+7 (999) 999-99-99">
+                <textarea name="comment" class="popup__textarea" placeholder="Комментарий:"></textarea>
+              </div>
+              <div class="popup__inputs-bottom">
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a href="">персональных даннных</a></p>
+                </div>
+                <div class="popup__box-btn">
+                  <button class="hero-btn form-main-btn "><span class="text-btn">Заказать звонок</span>
+                    <div class="btn-svg-box">
+                      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="popupBg2" class="popup__bg">
+        <div id="popup2" class="popup">
+          <div id="closePopupBtn2" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставьте заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с вами</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input name="name" type="text" class="popup__input" placeholder="Имя">
+                <input name="phone" type="text" class="popup__input" placeholder="Телефон">
+                <textarea name="comment" class="popup__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="popup__inputs-bottom">
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a href="">персональных даннных</a></p>
+                </div>
+                <div class="popup__box-btn">
+                  <button type="submit" class="hero-btn form-main-btn open-popup"><span class="text-btn">Заказать звонок</span>
+                    <div class="btn-svg-box">
+                      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="popupBg3" class="popup__bg">
+        <div id="popup3" class="popup">
+          <div id="closePopupBtn3" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставьте заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с вами</div>
+          </div>
+          <form class="popup__form" method="post" action="send_popup3.php">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input name="name" type="text" class="popup__input" placeholder="Имя">
+                <input name="phone" type="text" class="popup__input" placeholder="Телефон">
+                <input name="productname" type="text" class="popup__input" placeholder="Товар">
+
+                <textarea name="comment" class="popup__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="popup__inputs-bottom">
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a href="">персональных даннных</a></p>
+                </div>
+                <div class="popup__box-btn">
+                  <button type="submit" class="hero-btn form-main-btn open-popup"><span class="text-btn">Заказать звонок</span>
+                    <div class="btn-svg-box">
+                      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div id="popupBg4" class="popup__bg">
+        <div id="popup4" class="popup">
+          <div id="closePopupBtn4" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">10 из 10!</div>
+            <div class="popup__text">Скидка 10% на первые 10 поездок</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input type="text" class="popup__input" placeholder="Имя">
+                <input type="text" class="popup__input" placeholder="Телефон">
+                <input type="text" class="popup__input" placeholder="Название компании">
+                <input type="text" class="popup__input" placeholder="Почта">
+                <textarea class="popup__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="popup__inputs-bottom popup__inputs-bottom_reverses">
+                <div class="popup__inputs-bottom-text_reverse">
+                  <p class="popup__inputs-link">Скидка действует только по тарифу БИЗНЕС.</p>
+                  <p class="popup__inputs-link">Время работы нашего офиса с 09:00 до 18:00 в будни</p>
+                  <p class="popup__inputs-link">Нажимая на кнопку, вы соглашаетесь с условиями <a class="policy-color" href="https://rlm24.ru/privacy-policy/">политики конфиденциальности</a>
+                  </p>
+                </div>
+
+                <div class="popup__box-btn">
+                  <button class="popup__btn btn btn_transparent">Получить скидку</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> -->
+
+    </div>
+
+    <div class="cookie-box">
+      <div class="cookie-top">
+        <p class="cookie-text">
+          Куки файлы (или cookies) - это небольшие текстовые файлы, которые сайты сохраняют на устройстве пользователя (например,
+          компьютере или смартфоне) для хранения различной информации о посещениях и предпочтениях пользователя.
+          Они помогают сайтам запоминать информацию о вас, чтобы вам было удобнее пользоваться сайтом в дальнейшем, например.
+        </p>
+      </div>
+      <div class="cookie-bottom">
+        <button class="cookie-btn cookie-btn-no">Отклонить </button>
+        <button class="cookie-btn cookie-btn-ok ">Принять </button>
+      </div>
+    </div>
   </div>
 </body>
 
