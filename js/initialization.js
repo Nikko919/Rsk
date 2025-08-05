@@ -89,3 +89,24 @@ var swiper = new Swiper(".blogSwiper", {
     prevEl: " .blog-button-next",
   },
 });
+
+
+// articleSwiper
+
+var swiper = new Swiper(".articleSwiper", {
+  slidesPerView: 1.50, // Показывать 1.5 слайда
+  spaceBetween: 10,
+  grabCursor: true,
+  breakpoints: {
+    // Начиная с 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3.20,
+      spaceBetween: 20,
+    },
+
+  },
+});

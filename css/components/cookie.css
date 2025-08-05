@@ -3,13 +3,20 @@
   position: fixed;
   bottom: 10px;
   right: 15px;
-  /* max-width: 603px; */
+  /*max-width: 603px;
+  */
   max-width: 336px;
-
   padding: 20px 30px;
-  background-color: var(--bg-popup);
-  backdrop-filter: blur(20px);
+  background-color: rgba(240, 240, 240, 0.60);
+  backdrop-filter: blur(10px);
   z-index: 20;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border: 0.5px solid #F0F0F0;
+
 }
 
 .cookie-top {
@@ -17,8 +24,8 @@
 }
 
 .cookie-text {
-  font-family: var(--GeisM);
-  font-size: 14px;
+  font-family: var(--Actay);
+  font-size: 18px;
 }
 
 .cookie-bottom {
@@ -32,9 +39,9 @@
   justify-content: center;
   align-items: center;
   min-width: 128px;
-  padding: 10px;
-  border: 1px solid var(--color-title);
-  font-family: var(--GeisM);
+  padding: 10px 20px;
+  border: 1px solid var(--color-btn-dark);
+  font-family: var(--Unbounded);
   font-size: 18px;
   background-color: transparent;
   transition: 0.4s ease;
@@ -42,21 +49,26 @@
   -moz-transition: 0.4s ease;
   -ms-transition: 0.4s ease;
   -o-transition: 0.4s ease;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .cookie-btn:last-child {
-  background-color: var(--color-title);
-  color: var(--body-bg);
+  background-color: var(--color-btn-dark);
+  color: var(--color-body-bg);
 }
 
 @media (hover:hover) {
   .cookie-btn:hover {
-    background-color: var(--color-title);
-    color: var(--body-bg);
+    background-color: var(--color-btn-dark);
+    color: var(--color-body-bg);
   }
 
   .cookie-btn-ok:hover {
-    color: var(--color-title);
+    color: var(--color-btn-dark);
     background-color: transparent;
   }
 }
@@ -70,7 +82,8 @@
     max-width: 603px;
 
     padding: 20px 30px;
-    background-color: var(--bg-popup);
+    background-color: rgba(240, 240, 240, 0.60);
+
     backdrop-filter: blur(20px);
   }
 }
