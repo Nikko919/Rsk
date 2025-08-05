@@ -1,0 +1,177 @@
+.choose {
+  margin-bottom: 120px;
+}
+
+.choose__title {
+  font-family: var(--Unbounded);
+  font-size: 25px;
+  line-height: 120%;
+  color: var(--color-btn-dark);
+  margin-bottom: 30px;
+}
+
+.choose__card-title {
+  font-family: var(--Unbounded);
+  font-size: 20px;
+}
+
+.choose__card-text {
+  text-align: left;
+}
+
+.choose__cards-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+
+.choose__card {
+  position: relative;
+  overflow: hidden;
+  /*width: 370px;
+  */
+  min-height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--color-bg-card);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+
+}
+
+.choose__card-bg-yellow {
+  background-color: var(--color-btn-yellow);
+}
+
+.choose__card-text-color {
+  color: var(--color-btn-dark);
+}
+
+/* .choose__card-bg {
+  background-image: url('/images/choose/ChatGPT\ Image\ 27\ июл.\ 2025\ г.\,\ 19_22_21\ —\ копия.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.choose__card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  z-index: 2;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px) {
+  .choose__cards-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* @media (min-width:1024px) {
+  .choose__cards-box {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .choose__card:nth-child(n) {
+    grid-column: span 1;
+  }
+
+  .choose__card:nth-child(1) {
+    grid-column: 2;
+  }
+
+} */
+
+@media (min-width:1200px) {
+  .choose {
+    margin-bottom: 200px;
+  }
+
+  .choose__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .choose__card-title {
+    font-size: 25px;
+  }
+
+  .choose__cards-box {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 65px;
+  }
+
+  .choose__card:nth-child(n) {
+    grid-column: span 1;
+  }
+
+  .choose__card:nth-child(1) {
+    grid-column: 2;
+  }
+
+  .choose__card {
+    position: relative;
+    width: 437px;
+    min-height: 330px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+}
+
+@media (hover:hover) {
+  .choose__card:hover>.choose__card-img {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+  }
+}

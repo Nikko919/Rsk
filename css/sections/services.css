@@ -1,3 +1,7 @@
+.services {
+  margin-bottom: 120px;
+}
+
 .services__title {
   font-family: var(--Unbounded);
   font-size: 25px;
@@ -106,6 +110,10 @@
 }
 
 @media (min-width:1200px) {
+  .services {
+    margin-bottom: 200px;
+  }
+
   .servicesSwiper-btn-mb {
     display: none;
   }
