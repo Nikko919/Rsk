@@ -162,6 +162,7 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    transition: box-shadow 0.3s ease;
   }
 
 }
@@ -173,5 +174,12 @@
     -moz-transform: scale(1.04);
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
+  }
+
+  /* если что убрать  */
+  .choose__card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+      0 6px 20px rgba(0, 0, 0, 0.1);
+    /* Тень при наведении */
   }
 }
