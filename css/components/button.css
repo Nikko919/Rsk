@@ -9,13 +9,24 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn>span {
   color: var(--color-bg-card);
   font-family: var(--Unbounded);
   font-size: 16px;
-  /* line-height: 120%; */
+  /*line-height: 120%;
+  */
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .btn-svg-box {
@@ -31,11 +42,17 @@
 
 .btn-svg-box>svg>path {
   fill: var(--color-bg-card);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 
 .btn-color {
   background-color: var(--color-btn-yellow);
+  border: 1px solid transparent;
 }
 
 .btn-color>span {
@@ -44,6 +61,11 @@
 
 .btn-color>.btn-svg-box>svg>path {
   fill: var(--color-btn-dark);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 
@@ -61,7 +83,34 @@
 
     font-size: 18px;
   }
+}
 
+@media (hover:hover) {
+  .btn:hover {
+    background-color: var(--color-btn-yellow);
+  }
 
+  .btn:hover>.btn-svg-box>svg>path {
+    fill: var(--color-btn-dark);
+  }
+
+  .btn:hover>span {
+    color: var(--color-btn-dark);
+  }
+
+  /* желтая кнопка  */
+
+  .btn-color:hover {
+    background-color: var(--color-btn-dark);
+    border: 1px solid var(--color-body-bg);
+  }
+
+  .btn-color:hover>span {
+    color: var(--color-body-bg);
+  }
+
+  .btn-color:hover>.btn-svg-box>svg>path {
+    fill: var(--color-body-bg);
+  }
 
 }
