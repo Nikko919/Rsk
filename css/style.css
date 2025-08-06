@@ -9,7 +9,6 @@
 @import url(../css/components/swiper-bundle.css);
 @import url(../css/components/burger.css);
 @import url(../css/components/cookie.css);
-@import url(../css/components/popup.css);
 
 
 /* секции */
@@ -21,10 +20,17 @@
 
 @import url(../css/sections/page-blog/page-blog.css);
 @import url(../css/sections/page-article/page-article.css);
+/* каталог */
 @import url(../css/sections/page-services/page-services.css);
+/* страница услуги */
+@import url(../css/sections/page-service/page-service.css);
+
+@import url(../css/sections/404.css);
+@import url(../css/sections/policy.css);
 @import url(../css/footer/footer.css);
 
 
+@import url(../css/components/popup.css);
 
 
 /* Шрифты */

@@ -296,8 +296,8 @@
 /* Стили для кастомного чекбокса */
 .custom-checkbox {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #ccc;
   border-radius: 4px;
   background: white;
@@ -305,6 +305,21 @@
   vertical-align: middle;
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
+}
+
+.custom-checkbox-popup {
+  display: inline-block;
+
+  /* width: 20px;
+  height: 20px; */
+  border: 1px solid var(--color-btn-dark);
+  border-radius: 4px;
+  background: transparent;
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+
 }
 
 /* Стиль при наведении */
@@ -321,8 +336,8 @@
 .policy-checkbox:checked+.custom-checkbox::after {
   content: "";
   display: block;
-  width: 5px;
-  height: 10px;
+  width: 8px;
+  height: 12px;
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);

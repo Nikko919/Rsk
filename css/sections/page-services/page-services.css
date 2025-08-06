@@ -1,0 +1,231 @@
+.page-services {
+  margin-bottom: 120px;
+}
+
+.page-services__title {
+  font-family: var(--Unbounded);
+  font-size: 25px;
+  color: var(--color-btn-dark);
+  margin-bottom: 30px;
+}
+
+.page-services__filter-box {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.page-services__filter-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-bg-card);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.page-services-filter__title {
+  font-family: var(--Unbounded);
+  font-size: 20px;
+  color: var(--color-btn-dark);
+}
+
+.page-services__filter-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-body-bg);
+  border-radius: 30px;
+}
+
+.page-services__filter-btn-link {
+  text-align: center;
+  flex-grow: 1;
+  font-family: var(--Actay);
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-text);
+  padding: 10px 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+
+/* поменять чтоб эти стили применялись по умолчанию  черезз js */
+.is-active {
+  background-color: var(--color-btn-dark);
+  color: var(--color-body-bg);
+}
+
+/* .page-services__filter-btn-link:last-child {
+  background-color: var(--color-btn-dark);
+  color: var(--color-body-bg);
+} */
+
+/* нижняя част ьфильтрации */
+
+.page-services__filter-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  background-color: var(--color-bg-card);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-border-radius: 30px;
+
+}
+
+
+.page-services__filter-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  font-family: var(--Actay);
+  font-size: 12px;
+  color: var(--color-text);
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+/* поменять чтоб стили добовлялись через js когда атктивно */
+.is-active {
+  background-color: var(--color-btn-dark);
+  color: var(--color-body-bg);
+}
+
+.page-services__cards-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+
+
+
+
+
+
+
+@media (min-width:1024px) {
+  .page-services__card-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .page-services__filter-box {
+    min-width: 300px;
+  }
+
+  .page-services__cards-box {}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1200px) {
+  .page-services {
+    margin-bottom: 200px;
+  }
+
+  .page-services__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* фильтр */
+  .page-services__filter-box {
+    margin-bottom: 0;
+    max-width: 300px;
+  }
+
+  .page-services__filter-top {
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  .page-services-filter__title {
+    font-size: 25px;
+  }
+
+  .page-services__filter-btn-link {
+    font-size: 16px;
+    padding: 10px 15px;
+    flex: 1 1 0;
+  }
+
+  /* нижняя часть  */
+  .page-services__filter-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 30px;
+  }
+
+  .page-services__filter-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .page-services__cards-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+
+}
+
+@media (hover:hover) {
+  .page-services__filter-btn-link:hover {
+    color: var(--color-btn-yellow);
+  }
+
+  .page-services__filter-btn:hover {
+    color: var(--color-btn-yellow);
+  }
+}

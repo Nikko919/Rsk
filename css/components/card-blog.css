@@ -143,6 +143,10 @@
   display: none;
 }
 
+.services-card__bottom {
+  display: none;
+}
+
 @media (min-width:1200px) {
 
 
@@ -211,6 +215,8 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    /* max-height: 300px; */
+
   }
 
   .services-card__description {
