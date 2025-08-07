@@ -12,6 +12,7 @@
 
 
 /* секции */
+@import url(../css/header/header.css);
 @import url(../css/sections/hero.css);
 @import url(../css/sections/services.css);
 @import url(../css/sections/choose.css);

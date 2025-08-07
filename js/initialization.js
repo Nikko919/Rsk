@@ -110,3 +110,27 @@ var swiper = new Swiper(".articleSwiper", {
 
   },
 });
+
+
+
+var swiper = new Swiper(".serviceSwiper", {
+  slidesPerView: 1.20, // Показывать 1.5 слайда
+  spaceBetween: 10,
+  grabCursor: true,
+  breakpoints: {
+    // Начиная с 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+  },
+  navigation: {
+    nextEl: ".service-button-prev",
+    prevEl: ".service-button-next",
+  },
+});
