@@ -9,6 +9,7 @@
   padding: 20px 30px;
   background-color: rgba(240, 240, 240, 0.60);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 20;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -19,6 +20,10 @@
 
 }
 
+.cookie-btn-no {
+  color: var(--color-btn-dark);
+}
+
 .cookie-top {
   margin-bottom: 20px;
 }
@@ -26,6 +31,7 @@
 .cookie-text {
   font-family: var(--Actay);
   font-size: 18px;
+  line-height: 120%;
 }
 
 .cookie-bottom {
@@ -38,7 +44,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 128px;
+  min-width: 146px;
+  min-height: 39px;
   padding: 10px 20px;
   border: 1px solid var(--color-btn-dark);
   font-family: var(--Unbounded);
@@ -80,10 +87,13 @@
     bottom: 10px;
     right: 15px;
     max-width: 603px;
-
     padding: 20px 30px;
     background-color: rgba(240, 240, 240, 0.60);
-
     backdrop-filter: blur(20px);
+  }
+
+  .cookie-btn {
+    min-width: 160px;
+    min-height: 42px;
   }
 }

@@ -253,10 +253,8 @@
 
   .hero__img-absolut {
     position: absolute;
-    width: 576px;
-    height: 435px;
-    top: 25%;
-    left: -7%;
+    top: 28%;
+    left: -5.8%;
     /* top: 165px;
     right: 150px; */
     z-index: 2;
@@ -267,10 +265,10 @@
 
   .hero__img-absolut {
     position: absolute;
-    width: 576px;
-    height: 435px;
-    top: 25%;
-    left: -6.8%;
+    /* width: 576px;
+    height: 435px; */
+    top: 26%;
+    left: -5.5%;
     /* top: 165px;
     right: 150px; */
     z-index: 2;
@@ -281,10 +279,8 @@
 
   .hero__img-absolut {
     position: absolute;
-    width: 576px;
-    height: 435px;
-    top: 25%;
-    left: -6.8%;
+    top: 26%;
+    left: -5.5%;
     /* top: 165px;
     right: 150px; */
     z-index: 2;
@@ -305,12 +301,13 @@
 
   .hero__img-absolut {
     position: absolute;
-    width: 576px;
-    height: 435px;
-    top: 25%;
-    left: -6.8%;
-    /* top: 165px;
-    right: 150px; */
+    top: 26%;
+    left: -5.5%;
+    /* left: -6.8%; */
+    /*top: 165px;
+    right: 150px;
+    */
     z-index: 2;
+
   }
 }
