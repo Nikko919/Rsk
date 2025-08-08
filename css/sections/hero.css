@@ -255,8 +255,38 @@
     position: absolute;
     width: 576px;
     height: 435px;
-    top: 165px;
-    right: 150px;
+    top: 25%;
+    left: -7%;
+    /* top: 165px;
+    right: 150px; */
+    z-index: 2;
+  }
+}
+
+@media (min-width:1480px) {
+
+  .hero__img-absolut {
+    position: absolute;
+    width: 576px;
+    height: 435px;
+    top: 25%;
+    left: -6.8%;
+    /* top: 165px;
+    right: 150px; */
+    z-index: 2;
+  }
+}
+
+@media (min-width:1500px) {
+
+  .hero__img-absolut {
+    position: absolute;
+    width: 576px;
+    height: 435px;
+    top: 25%;
+    left: -6.8%;
+    /* top: 165px;
+    right: 150px; */
     z-index: 2;
   }
 }
@@ -277,9 +307,10 @@
     position: absolute;
     width: 576px;
     height: 435px;
-    top: 165px;
-    right: 188px;
-    /* right: 407px; */
+    top: 25%;
+    left: -6.8%;
+    /* top: 165px;
+    right: 150px; */
     z-index: 2;
   }
 }

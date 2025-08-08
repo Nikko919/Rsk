@@ -19,6 +19,10 @@
 }
 
 .main-services__card {
+  /* background-image: url(/images/servises/05edbdf31d3f168f671298d7ca56dd9a79ed8883.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -34,6 +38,7 @@
   overflow: hidden;
 }
 
+
 .main-services {
   position: absolute;
   width: 100%;
@@ -41,6 +46,8 @@
   top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
+  object-position: center;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -163,6 +170,7 @@
   }
 
   .main-services {
+
     object-fit: cover;
     object-position: center;
   }
